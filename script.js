@@ -29,6 +29,7 @@ function startQuiz() {
 
 function resetQA(){
     nextButton.classList.add('hide');
+    clearStatusClass(document.body)
     while (answers.firstChild) {
         answers.removeChild(answers.firstChild)
     }
@@ -83,21 +84,30 @@ function clearStatusClass(node) {
 
 const sampleQuestions = [
     {
-        question: 'Can you choose biggest number?',
+        question: 'What year was the very first model of the iPhone released?',
         answers: [
-            {option: '0', isCorrect: false},
-            {option: '10', isCorrect: true},
-            {option: '4', isCorrect: false},
-            {option: '5', isCorrect: false}
+            {option: '2003', isCorrect: false},
+            {option: '2007', isCorrect: true},
+            {option: '2010', isCorrect: false},
+            {option: '1998', isCorrect: false}
         ]
     },
     {
-        question: 'C is the correct answer',
+        question: 'What’s the shortcut for the “copy” function on most computers?',
         answers: [
-            {option: 'A', isCorrect: false},
-            {option: 'B', isCorrect: false},
-            {option: 'not C', isCorrect: false},
-            {option: 'C', isCorrect: true}
+            {option: 'ctrl A', isCorrect: false},
+            {option: 'cmd B', isCorrect: false},
+            {option: 'ctrl C', isCorrect: true},
+            {option: 'Copy', isCorrect: false}
+        ]
+    },
+    {
+        question: 'Who is often called the father of the computer?',
+        answers: [
+            {option: 'Charles Babbage', isCorrect: true},
+            {option: 'John Dove', isCorrect: false},
+            {option: 'Mathew Mc', isCorrect: false},
+            {option: 'Martin LC', isCorrect: false}
         ]
     }
 ]
