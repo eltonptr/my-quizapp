@@ -93,3 +93,11 @@ a:visited { text-decoration: none;
     color:wheat;}
 a:hover { text-decoration: underline; }
 a:active { text-decoration: underline; }
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 20px;
+}
